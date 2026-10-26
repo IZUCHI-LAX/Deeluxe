@@ -1,0 +1,613 @@
+/* CSS stylesheet */
+
+html {
+	scroll-behavior: smooth;
+}
+
+header {
+	border-bottom: 2px solid rgb(19, 66, 62);
+	padding: 10px;
+	display: flex;
+	gap: 2rem;
+	position: sticky;
+	z-index: 1000;
+	top: 0;
+	background-color: white;
+
+
+}
+
+.logo {
+	width: auto;
+	height: 60px;
+	object-fit: contain;
+	display: inline;
+}
+
+.logo-link {
+	display: inline-block;
+	justify-content: center;
+}
+
+.hd-logo {
+	display: flex;
+}
+
+nav {
+	margin-left: auto;
+
+}
+
+.nav-container {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.75rem 1rem;
+	margin-left: auto;
+
+}
+
+.home-button {
+	color: turquoise;
+	background-color: white;
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 0px;
+}
+
+.home-button:hover {
+	color: teal
+}
+
+.services-button {
+	color: turquoise;
+	background-color: white;
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 0px;
+}
+
+.services-button:hover {
+	color: teal;
+}
+
+.about-button {
+	color: turquoise;
+	background-color: white;
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 0px;
+}
+
+.about-button:hover {
+	color: teal;
+}
+
+.blogg-button {
+	color: turquoise;
+	background-color: white;
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 0px;
+}
+
+.blogg-button:hover {
+	color: teal;
+}
+
+.quote-button {
+	color: silver;
+	background-color: navy;
+	border: 2px solid turquoise;
+	border-radius: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 20px;
+	padding: 10px 20px;
+
+}
+
+.main-container {
+	align-items: center;
+	width: auto;
+	display: flex;
+	margin-bottom: 50px;
+	align-items: flex-start;
+	gap: 5rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 200px));
+
+
+}
+
+.title1 {
+	font-family: "Mouse Memoirs", sans-serif;
+	font-size: 70px;
+	font-weight: bold;
+	color: teal;
+	width: 800px;
+	margin-bottom: 5px;
+	margin-top: 0px;
+	padding: 2rem 1rem;
+}
+
+.highlight,
+.highlight2,
+.highlight3 {
+	color: rgb(19, 66, 62);
+	font-weight: bold;
+}
+
+.title2,
+.title6 {
+	color: #93b3b0;
+	font-family: monospace;
+	font-size: 20px;
+	width: 700px;
+	margin-top: 0px;
+}
+
+.title4,
+.title3 {
+	display: inline-block;
+	color: rgb(19, 66, 62);
+	font-weight: bold;
+	width: 250px;
+}
+
+.text-container {
+	margin-right: 250px;
+	margin-left: 150px;
+	width: 150px;
+	display: inline-block;
+	margin-top: 45px;
+	padding: 2rem 1rem;
+
+}
+
+.form-container {
+	display: grid;
+	border: black;
+	border-radius: 20px;
+	width: 400px;
+	max-width: 500px;
+	padding: 40px;
+	background-color: rgb(132, 199, 168);
+	box-shadow: 5px 10px 18px rgb(121, 224, 176);
+	box-sizing: border-box;
+	vertical-align: top;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-left: 500px;
+
+}
+
+.price {
+	color: teal;
+	font-family: "Mouse Memoirs", sans-serif;
+	font-weight: bold;
+	font-size: 45px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.bed {
+	color: teal;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 25px;
+
+}
+
+.bedcolumn {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+}
+
+.studio {
+	color: white;
+	background-color: rgb(19, 66, 62);
+	font-weight: bold;
+	padding: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border: 10px rgb(83, 117, 114);
+	border-radius: 10px;
+	margin-right: 10px
+}
+
+.studio:active {
+	color: rgb(19, 66, 62);
+	background-color: white;
+}
+
+.a,
+.b,
+.c,
+.d {
+	color: white;
+	background-color: rgb(19, 66, 62);
+	font-weight: bold;
+	padding: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-style: solid;
+	border: 10px rgb(83, 117, 114);
+	border-radius: 10px;
+	margin-right: 10px;
+
+}
+
+.a:active {
+	color: rgb(19, 66, 62);
+	background-color: white;
+	border: 10px rgb(19, 66, 62);
+
+}
+
+.b:active {
+	color: rgb(19, 66, 62);
+	background-color: white;
+}
+
+.c:active {
+	color: rgb(19, 66, 62);
+	background-color: white;
+}
+
+.d:active {
+	color: rgb(19, 66, 62);
+	background-color: white;
+}
+
+.bathrooms {
+	color: teal;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 25px;
+	margin: 200px;
+}
+
+.bath {
+	color: teal;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 200px;
+}
+
+.aa,
+.bb,
+.cc {
+	color: white;
+	background-color: rgb(19, 66, 62);
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 42px;
+	padding-left: 41px;
+	border-style: solid;
+	border: 10px rgb(83, 117, 114);
+	border-radius: 10px;
+	margin-right: 20px
+}
+
+.aa:active {
+	color: rgb(19, 66, 62);
+	background-color: white;
+}
+
+.bb:active {
+	color: rgb(19, 66, 62);
+	background-color: white;
+}
+
+.cc:active {
+	color: rgb(19, 66, 62);
+	background-color: white;
+}
+
+.head-label {
+	margin-bottom: 20px;
+	color: teal;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+.cleann {
+	width: 98%;
+	padding: 15px;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	background-color: rgb(19, 66, 62);
+	border: 3px solid #178541;
+	border-radius: 12px;
+	cursor: pointer;
+	outline: none;
+	margin-top: 10px;
+}
+
+.total {
+	color: teal;
+	font-weight: bold;
+	font-size: 26px;
+}
+
+#quote button[aria-pressed="true"] {
+	background: #0a7cff;
+	color: #fff;
+}
+
+.third-container {
+	margin-right: 300px;
+	margin-left: 150px;
+	width: 800px;
+	display: block;
+	text-align: left;
+}
+
+.title5 {
+	font-family: "Mouse Memoirs", sans-serif;
+	font-size: 70px;
+	font-weight: bold;
+	color: teal;
+	width: 800px;
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+
+.forth-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 320px));
+	align-items: stretch;
+	justify-content: center;
+	padding: 0.75rem 1rem;
+	gap: 2rem;
+	vertical-align: top;
+	margin: 1100;
+	margin: 0 auto;
+}
+
+.home-border:hover,
+.post-border:hover,
+.pest-border:hover,
+.deep-border:hover,
+.rugs-border:hover,
+.jan-border:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-border,
+.post-border,
+.pest-border,
+.deep-border,
+.rugs-border,
+.jan-border {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: rgb(19, 66, 62);
+	border-radius: 20px;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	padding: 1rem;
+	margin: 0;
+	box-sizing: border-box;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.deepicon,
+.homeicon,
+.pesticon,
+.janicon,
+.rugsicon,
+.posticon {
+	width: 120px;
+	margin: 0 auto;
+	justify-content: center;
+	display: block;
+}
+
+.home,
+.deep,
+.pest,
+.rugs,
+.janitor,
+.post {
+	color: teal;
+	font-family: "Mouse Memoirs", sans-serif;
+	font-weight: bold;
+	font-size: clamp(32px, 5vw, 25px);
+	margin: 0.5rem 0;
+	margin: 0px;
+	text-align: center;
+	overflow-wrap: break-word;
+}
+
+.descrip,
+.descrip1,
+.descrip2,
+.descrip3,
+.descrip4,
+.descrip5 {
+	color: #93b3b0;
+	font-family: monospace;
+	font-size: clamp(14px, 2vw, 18px);
+	width: 250px;
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	overflow-wrap: break-word;
+
+}
+
+.title7 {
+	color: #93b3b0;
+	font-family: monospace;
+	font-size: 20px;
+	width: auto;
+
+}
+
+.fifth-text {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.descrip6 {
+	color: #93b3b0;
+	font-family: monospace;
+	font-size: clamp(14px, 2vw, 18px);
+}
+
+
+.last-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 200px));
+	align-items: stretch;
+	justify-content: center;
+	padding: 2rem 1rem;
+	gap: 1rem;
+	vertical-align: top;
+	margin: 1100;
+	margin: 0 auto;
+
+}
+
+.one-container,
+.two-container,
+.three-container,
+.four-container {
+	border: rgb(19, 66, 62);
+	border-radius: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	align-items: center;
+	text-align: left;
+	width: 200px;
+	padding: 2rem 1rem;
+}
+
+.numbs {
+	background-color: #178541;
+	padding: 10px;
+	text-align: center;
+	margin-right: 130px;
+	border-radius: 50%;
+	color: #e5e5e5;
+	font-size: large;
+	font-weight: bold;
+}
+
+.tell,
+.Get,
+.Weclean,
+.Wefollow {
+	color: teal;
+	font-family: "Mouse Memoirs", sans-serif;
+	font-weight: bold;
+	font-size: clamp(20px, 5vw, 25px);
+	margin: 0.5rem 0;
+	margin: 0px;
+	text-align: left;
+	overflow-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flogo {
+	width: auto;
+	height: 60px;
+	object-fit: contain;
+	display: inline;
+	margin-bottom: 0px;
+}
+
+
+.footer {
+	background: teal;
+	color: #e5e5e5;
+	padding: 50px 5% 0;
+}
+
+.footer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 30px;
+}
+
+.footer h3,
+.footer h4 {
+	color: #fff;
+	margin-bottom: 15px;
+}
+
+.footer p,
+.footer li {
+	font-size: 0.95rem;
+	line-height: 1.7;
+}
+
+.footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer a {
+	color: #e5e5e5;
+	text-decoration: none;
+	transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer a:hover {
+	color: #fca311;
+	padding-left: 4px;
+	/* subtle hover motion, like your cards */
+}
+
+.footer-bottom {
+	margin-top: 40px;
+	padding: 20px 0;
+	text-align: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+	font-size: 0.85rem;
+}

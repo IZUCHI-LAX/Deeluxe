@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEELUXE CLEANPRO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Mouse+Memoirs&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <header>
+        <div class="hd-logo">
+            <a href="#home" class="logo-link">
+                <img class="logo" src="logo.png" alt="logo">
+            </a>
+        </div>
+
+        <nav>
+            <div class="nav-container">
+                <button onclick="location.href='#logo'" class="home-button">
+                    HOME
+                </button>
+
+                <button onclick="location.href='#services'" class="services-button">
+                    SERVICES
+                </button>
+
+                <button onclick="location.href='#aboutus'" class="about-button">
+                    ABOUT US
+                </button>
+
+                <button onclick="location.href='#contact'" class="blogg-button">
+                    CONTACT
+                </button>
+
+                <button onclick="location.href='#quote'" class="quote-button">
+                    Get a Quote
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="text-container">
+            <p class="title1" id="logo">
+                Experience the luxury <br>of a spotless home with <br><span class="highlight">DEELUXE CLEANPRO</span>
+            </p>
+
+            <p class="title2">
+                Vetted, insured cleaners for homes and offices. <br>Pick your size, see the price, <br>and book a time
+                in
+                under a
+                minute
+            </p>
+
+            <p class="title3">
+                <span class="highlight2">&check;</span> Background-checked team
+            </p>
+
+            <p class="title4">
+                <span class="highlight3">&check;</span> Re-clean free if you're not happy
+            </p>
+        </div>
+
+        <div class="form-container" id="quote">
+            <h2 class="price">Get an instant price</h2>
+            <div class="bedroom">
+                <label class="bed">Bedrooms</label>
+            </div>
+            <div class="bedcolumn" id="bedrooms">
+                <button type="button" aria-pressed="true" class="studio" data-value="0">Studio</button>
+                <button type="button" aria-pressed="false" class="a" data-value="1">1</button>
+                <button type="button" aria-pressed="false" class="b" data-value="2">2</button>
+                <button type="button" aria-pressed="false" class="c" data-value="3">3</button>
+                <button type="button" aria-pressed="false" class="d" data-value="4">4+</button>
+            </div>
+
+            <div class="Bathrooms">
+                <label class="bath">Bathrooms</label>
+            </div>
+            <div id="bathrooms">
+                <button type="button" aria-pressed="true" class="aa" data-value="1">1</button>
+                <button type="button" aria-pressed="false" class="bb" data-value="2">2</button>
+                <button type="button" aria-pressed="false" class="cc" data-value="3">3+</button>
+            </div>
+
+            <div>
+                <label for="clean" class="head-label">Type of clean</label><br>
+
+                <select id="clean" class="cleann">
+                    <option value="standard">Basic Cleaning</option>
+                    <option value="deep">Deep Cleaning</option>
+                    <option value="office">Office Cleaning</option>
+                    <option value="construction">Post-Construction cleaning</option>
+                    <option value="deep">Pest Control (fumigating)</option>
+                </select>
+            </div>
+            <div>
+                <p id="totalPrice" class="total">Total: ₦0</p>
+                <P>Feel free to negotiate <a href="https://wa.me/+2349037940259" target="blank">
+                        Click here
+                    </a>
+                </P>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="third-container">
+        <div class="third-text" id="services">
+            <p class="title5">our services</p>
+            <p class="title6">Cleaning for every kind of space, from a studio flat to a finished building site</p>
+        </div>
+    </div>
+
+    <div class="forth-container">
+        <div class="home-border">
+            <img class="homeicon" src="home cleaning.jpeg" alt="logo">
+            <p class="home">Home Cleaning</p>
+            <p class="descrip">Our standard cleaning service helps maintain everyday cleanliness in your home,
+                apartment, or office. We take care of routine dirt, dust, and mess to keep your space neat, presentable,
+                and welcoming.</p>
+        </div>
+
+        <div class="deep-border">
+            <img class="deepicon" src="deep.jpeg" alt="logo">
+            <p class="deep">Deep Cleaning</p>
+            <p class="descrip1">When regular cleaning is not enough, our deep cleaning service targets accumulated dirt,
+                stubborn stains, and hard-to-reach areas that are often overlooked during routine cleaning. We give your
+                space extra attention to help restore its freshness and cleanliness.</p>
+        </div>
+        <div class="post-border">
+            <img class="posticon" src="post-construction.jpeg" alt="logo">
+            <p class="post">Post-Construction <span>Cleaning</span></p>
+            <P class="descrip2">Construction and renovation projects often leave behind dust, debris, paint marks, and
+                other residues. Our post-construction cleaning service helps prepare newly built or renovated properties
+                for occupation, inspection, or handover.</P>
+        </div>
+    </div>
+
+    <div class="forth-container">
+        <div class="pest-border">
+            <img class="pesticon" src="pest.jpeg" alt="logo">
+            <p class="pest">Pest Control</p>
+            <p class="descrip3">Say Goodbye to Unwanted Guests like Cockroaches, rodents, termites, bed bugs,
+                mosquitoes, ants: we get rid of them and help keep them from coming back. Our trained technicians use
+                safe, effective treatments that protect your family, pets, and property.</p>
+        </div>
+
+        <div class="rugs-border">
+            <img class="rugsicon" src="rugs.png" alt="logo">
+            <p class="rugs">Upholtery/rugs vacuum</p>
+            <p class="descrip4">Over time, upholstery and Rugs trap more dust, body oils, food spills, pet hair, and
+                allergens that regular vacuuming can’t reach. Our technicians test your fabric first, then use the right
+                method and products to lift dirt from deep within the fibers without causing shrinkage, fading, or
+                damage.</p>
+        </div>
+        <div class="jan-border">
+            <img class="janicon" src="janitor.jpeg" alt="logo">
+            <p class="janitor">Janitorial services <span>Cleaning</span></p>
+            <P class="descrip5">A Clean Workplace Makes a Great Impression We are Reliable, consistent cleaning for
+                offices, schools, shops, clinics, and estates. We work around your schedule so your team can focus on
+                the business.
+            </P>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+    <div class="fifth-container">
+        <div class="fifth-text" id="aboutus">
+            <p>
+            <h1 class="title5">Who we are</h1>
+            </p>
+
+            <p class="title7">Deeluxe cleanpro is a professional cleaning company serving homes, offices and rental
+                properties. We focus on
+                doing the fundamentals consistently well: a clear scope of work, reliable scheduling and careful,
+                thorough
+                cleaning.
+            </p>
+            <p class="title7">We’re a family-run cleaning company with one goal: to give you your time back. You
+                shouldn’t
+                have to spend
+                your evenings scrubbing floors or worrying about who’s in your home.
+            </p>
+            <p class="title7">
+                We hire carefully, pay fairly and train every cleaner on the same checklist. That’s why the same team
+                shows
+                up each visit, knows your space and does the job the way you like it.
+            </p>
+
+            </p>
+        </div>
+
+        <div>
+            <div class="fifth-text">
+                <p>
+                <h1 class="title5">How a visit works</h1>
+                </p>
+            </div>
+
+            <div class="last-container">
+                <div class="one-container">
+                    <div class="numbs">1</div>
+                    <p class="tell">Tell us what you need</p>
+                    <p class="descrip6">Share your space, your priorities and how often you want us.</p>
+                </div>
+
+                <div class="two-container">
+                    <div class="numbs">2</div>
+                    <p class="Get">Get a fixed quote</p>
+                    <p class="descrip6">We confirm one price before we start. No surprise charges.</p>
+                </div>
+
+                <div class="three-container">
+                    <div class="numbs">3</div>
+                    <p class="Weclean">We clean to a checklist</p>
+                    <p class="descrip6">Your regular team works room by room and checks each task off.</p>
+                </div>
+
+                <div class="four-container">
+                    <div class="numbs">4</div>
+                    <p class="Wefollow">We follow up</p>
+                    <p class="descrip6">We ask for your feedback after each visit. If something was missed, we return to
+                        correct it at no charge.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="website.js"></script>
+</body>
+
+<footer class="footer" id="contact">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3><img class="flogo" src="logo.png" alt="logo"></h3>
+            <p>Professional pest control, upholstery and rug cleaning, and janitorial services for homes and businesses
+                across [Portharcourt/Lagos, Nigeria].</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+                <li><a href="#pest">Home cleaning</a></li>
+                <li><a href="#janitorial">Deep Cleaning</a></li>
+                <li><a href="#upholstery">Post-Construction</a></li>
+                <li><a href="#janitorial">Pest Control</a></li>
+                <li><a href="#janitorial">Upholtery/Rugs vacuum</a></li>
+                <li><a href="#janitorial">Janitorial Services</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>[Eligbolo/Woji Port Harcourt city, Nigeria]</p>
+            <p><a href="tel:+234XXXXXXXXXX">[+234 903 794 0259]</a></p>
+            <p><a href="mailto:info@yourcompany.com">deeluxecleanpro@gmail.com</a></p>
+            <p>Mon to Sat: 8am to 6pm</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 DEELUXE CLEANPRO. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</html>
