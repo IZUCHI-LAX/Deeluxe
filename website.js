@@ -1,11 +1,19 @@
 console.log("script loaded");
 
-const mobileMenu = document.getElementById("mobile-menu");
-const navContainer = document.getElementById("nav-container");
 
-mobileMenu.addEventListener("click", (e) => {
-  e.preventDefault();
-  navContainer.classList.toggle("active");
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileMenu = document.getElementById("mobile-menu");
+  const navContainer = document.getElementById("nav-container");
+
+  if (!mobileMenu || !navContainer) {
+    console.log("Menu elements not found. Check the IDs.");
+    return;
+  }
+
+  mobileMenu.addEventListener("click", function (e) {
+    e.preventDefault();
+    navContainer.classList.toggle("active");
+  });
 });
 
 // ---- Prices (change these to your real rates) ----
