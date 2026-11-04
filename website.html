@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Mouse+Memoirs&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="website.css">
 </head>
 
@@ -21,10 +24,15 @@
             <a href="#home" class="logo-link">
                 <img class="logo" src="logo.png" alt="logo">
             </a>
+
         </div>
+        <a href="#" class="menu" id="mobile-menu">&#9776;</a>
+
+
 
         <nav>
-            <div class="nav-container">
+
+            <div class="nav-container" id="nav-container">
                 <button onclick="location.href='#logo'" class="home-button">
                     HOME
                 </button>
@@ -100,7 +108,7 @@
                     <option value="deep">Deep Cleaning</option>
                     <option value="office">Office Cleaning</option>
                     <option value="construction">Post-Construction cleaning</option>
-                    <option value="deep">Pest Control (fumigating)</option>
+                    <option value="pest">Pest Control (fumigating)</option>
                 </select>
             </div>
             <div>
@@ -155,13 +163,13 @@
             <img class="pesticon" src="pest.jpeg" alt="logo">
             <p class="pest">Pest Control</p>
             <p class="descrip3">Say Goodbye to Unwanted Guests like Cockroaches, rodents, termites, bed bugs,
-                mosquitoes, ants: we get rid of them and help keep them from coming back. Our trained technicians use
+                mosquitoes & ants we get rid of them and help keep them from coming back. Our trained technicians use
                 safe, effective treatments that protect your family, pets, and property.</p>
         </div>
 
         <div class="rugs-border">
             <img class="rugsicon" src="rugs.png" alt="logo">
-            <p class="rugs">Upholtery/rugs vacuum</p>
+            <p class="rugs">Upholstery/rugs vacuum</p>
             <p class="descrip4">Over time, upholstery and Rugs trap more dust, body oils, food spills, pet hair, and
                 allergens that regular vacuuming can’t reach. Our technicians test your fabric first, then use the right
                 method and products to lift dirt from deep within the fibers without causing shrinkage, fading, or
@@ -265,8 +273,8 @@
         <div class="footer-col">
             <h4>Quick Links</h4>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="#logo">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>

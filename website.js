@@ -1,5 +1,13 @@
 console.log("script loaded");
 
+const mobileMenu = document.getElementById("mobile-menu");
+const navContainer = document.getElementById("nav-container");
+
+mobileMenu.addEventListener("click", (e) => {
+  e.preventDefault();
+  navContainer.classList.toggle("active");
+});
+
 // ---- Prices (change these to your real rates) ----
 const BASE_PRICE = {
   standard: 20000, deep: 25000,
