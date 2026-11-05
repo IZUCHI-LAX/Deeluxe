@@ -352,7 +352,7 @@ nav {
 .title2,
 .title6 {
 	color: #93b3b0;
-	font-family: monospace;
+	font-family: "Poppins", sans-serif;
 	font-size: clamp(1rem, 2.5vw, 1.25rem);
 	line-height: 1.5;
 	width: auto;
@@ -711,7 +711,7 @@ nav {
 
 .title6 {
 	color: #93b3b0;
-	font-family: monospace;
+	font-family: "Poppins", sans-serif;
 	font-size: clamp(1rem, 2.5vw, 1.25rem);
 	line-height: 1.5;
 	margin: 0;
@@ -809,8 +809,21 @@ nav {
 .title7 {
 	color: #93b3b0;
 	font-family: "Poppins", sans-serif;
+	font-size: clamp(1rem, 2.5vw, 1.25rem);
+	line-height: 1.5;
+	margin: 0;
+	overflow-wrap: break-word;
+	width: auto;
+
+
+
+	/*color: #93b3b0;
+	font-family: "Poppins", sans-serif;
 	font-size: 20px;
 	width: auto;
+	line-height: 1.5;
+	max-width: 100%;
+	margin-top: 0;*/
 
 }
 
