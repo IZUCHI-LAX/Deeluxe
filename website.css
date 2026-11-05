@@ -47,19 +47,36 @@ nav {
 	header {
 		flex-direction: row;
 		flex-wrap: nowrap;
-		align-items: right;
+		align-items: center;
 		justify-content: space-between;
 	}
 
 	.hd-logo {
 		flex: 0 0 auto;
+		display: flex;
+		align-items: center;
 	}
+
+	.logo-link {
+		display: flex;
+		align-items: center;
+	}
+
+	.logo {
+		flex: 0 0 auto;
+		display: block;
+		height: 50px;
+		width: auto;
+	}
+
 
 	.menu {
 		display: block;
 		flex: 0 0 auto;
 		margin-left: auto;
 		order: 0;
+		align-self: center;
+		line-height: 1;
 	}
 
 	/* The list becomes a dropdown below the header, so it doesn't push the icon */
@@ -111,20 +128,7 @@ nav {
 	}
 }*/
 
-@media (max-width: 768px) {
-	.menu {
-		display: block;
-		margin-left: auto;
-	}
 
-	.nav-container.active {
-		display: none;
-		flex-direction: column;
-		align-items: stretch;
-		width: 100%;
-		background-color: white;
-	}
-}
 
 /*@media (max-width: 768px) {
 	nav .nav-container {
@@ -203,7 +207,7 @@ header {
 }
 
 .hd-logo {
-	display: flex;
+	display: inline-block;
 }
 
 nav {
@@ -729,6 +733,11 @@ nav {
 	vertical-align: top;
 	margin: 1100;
 	margin: 0 auto;
+	overflow-wrap: break-word;
+	width: auto;
+	line-height: 1.5;
+	width: 100%;
+	padding: clamp(1.5rem, 5vw, 4rem) clamp(1rem, 4vw, 3rem);
 }
 
 .home-border:hover,
@@ -759,6 +768,11 @@ nav {
 	margin: 0;
 	box-sizing: border-box;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	overflow-wrap: break-word;
+	width: auto;
+	line-height: 1.5;
+	width: 100%;
+	padding: clamp(1.5rem, 5vw, 4rem) clamp(1rem, 4vw, 3rem);
 }
 
 .deepicon,
@@ -803,6 +817,10 @@ nav {
 	margin: 0 auto;
 	text-align: center;
 	overflow-wrap: break-word;
+	width: auto;
+	line-height: 1.5;
+	width: 100%;
+	padding: clamp(1.5rem, 5vw, 4rem) clamp(1rem, 4vw, 3rem);
 
 }
 
@@ -828,8 +846,12 @@ nav {
 }
 
 .fifth-text {
-	margin-left: 100px;
-	margin-right: 100px;
+	margin: 0px;
+	overflow-wrap: break-word;
+	width: auto;
+	line-height: 1.5;
+	width: 100%;
+	padding: clamp(1.5rem, 5vw, 4rem) clamp(1rem, 4vw, 3rem);
 }
 
 .descrip6 {
@@ -849,6 +871,11 @@ nav {
 	vertical-align: top;
 	margin: 1100;
 	margin: 0 auto;
+	overflow-wrap: break-word;
+	width: auto;
+	line-height: 1.5;
+	width: 100%;
+	padding: clamp(1.5rem, 5vw, 4rem) clamp(1rem, 4vw, 3rem);
 
 }
 
