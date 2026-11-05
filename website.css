@@ -45,6 +45,51 @@ nav {
 
 @media (max-width: 768px) {
 	header {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: right;
+		justify-content: space-between;
+	}
+
+	.hd-logo {
+		flex: 0 0 auto;
+	}
+
+	.menu {
+		display: block;
+		flex: 0 0 auto;
+		margin-left: auto;
+		order: 0;
+	}
+
+	/* The list becomes a dropdown below the header, so it doesn't push the icon */
+	header nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		margin: 0;
+		background-color: white;
+		backdrop-filter: blur(6px);
+		z-index: 999;
+	}
+
+	header nav .nav-container {
+		display: none;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+		padding: 0.5rem 1rem;
+		border-bottom: 2px solid rgb(19, 66, 62);
+	}
+
+	header nav .nav-container.active {
+		display: flex;
+	}
+}
+
+/*@media (max-width: 768px) {
+	header {
 		flex-wrap: wrap;
 		align-items: center;
 	}
@@ -64,7 +109,7 @@ nav {
 		width: 100%;
 		margin-left: 0;
 	}
-}
+}*/
 
 @media (max-width: 768px) {
 	.menu {
@@ -119,7 +164,7 @@ nav {
 
 
 header {
-	border-bottom: 2px solid rgb(19, 66, 62);
+	border-bottom: 0.3px solid rgb(19, 66, 62);
 	padding: 10px 16px;
 	display: flex;
 	flex-wrap: wrap;
@@ -129,7 +174,8 @@ header {
 	position: sticky;
 	z-index: 1000;
 	top: 0;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(6px);
 
 
 	/*border-bottom: 2px solid rgb(19, 66, 62);
