@@ -14,6 +14,16 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     navContainer.classList.toggle("active");
   });
+
+  let lastScroll = window.scrollY;
+
+  window.addEventListener("scroll", function () {
+    if (Math.abs(window.scrollY - lastScroll) > 30) {
+       navContainer.classList.remove("active");
+       lastScroll = window.scrollY;
+  }
+});
+
 });
 
 // ---- Prices (change these to your real rates) ----
