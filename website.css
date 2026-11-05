@@ -44,7 +44,7 @@ nav {
 }*/
 
 @media (max-width: 768px) {
-	header {
+	.head {
 		flex-direction: row;
 		flex-wrap: nowrap;
 		align-items: center;
@@ -64,14 +64,14 @@ nav {
 
 	.logo {
 		flex: 0 0 auto;
-		display: block;
+		display: flex;
 		height: 50px;
 		width: auto;
 	}
 
 
 	.menu {
-		display: block;
+		display: inline-block;
 		flex: 0 0 auto;
 		margin-left: auto;
 		order: 0;
@@ -198,7 +198,7 @@ header {
 	width: auto;
 	height: 60px;
 	object-fit: contain;
-	display: inline;
+	display: block;
 }
 
 .logo-link {
