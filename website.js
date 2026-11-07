@@ -2,28 +2,44 @@ console.log("script loaded");
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const mobileMenu = document.getElementById("mobile-menu");
+  const menuBtn = document.getElementById("mobile-menu");
   const navContainer = document.getElementById("nav-container");
 
-  if (!mobileMenu || !navContainer) {
+  if (!menuBtn || !navContainer) {
     console.log("Menu elements not found. Check the IDs.");
     return;
   }
 
-  mobileMenu.addEventListener("click", function (e) {
-    e.preventDefault();
-    navContainer.classList.toggle("active");
+  function setMenuOpen(isOpen) {
+    navContainer.classList.toggle("active", isOpen);
+    menuBtn.innerHTML = isOpen ? "&times;" : "&#9776;";
+    menuBtn.setAttribute("aria-expanded", isOpen);
+  }
+
+  // Toggle the menu when the hamburger is clicked
+  menuBtn.addEventListener("click", function (e) {
+    e.preventDefault(); // stop href="#" from jumping to the top
+    setMenuOpen(!navContainer.classList.contains("active"));
   });
 
-  let lastScroll = window.scrollY;
+  // Close after any nav button is tapped
+  navContainer.addEventListener("click", function (e) {
+    if (e.target.closest("button")) setMenuOpen(false);
+  });
 
+  // Close when tapping outside the header
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest("header")) setMenuOpen(false);
+  });
+
+  // Close when the user scrolls more than 30px
+  let lastScroll = window.scrollY;
   window.addEventListener("scroll", function () {
     if (Math.abs(window.scrollY - lastScroll) > 30) {
-       navContainer.classList.remove("active");
-       lastScroll = window.scrollY;
-  }
-});
-
+      setMenuOpen(false);
+      lastScroll = window.scrollY;
+    }
+  });
 });
 
 // ---- Prices (change these to your real rates) ----

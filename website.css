@@ -37,14 +37,30 @@ nav {
 	margin-left: auto;
 }
 
-/*@media (min-width: 769px) {
+.overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+	z-index: 998;
+}
+
+.overlay.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+@media (min-width: 769px) {
 	.nav-container {
 		display: flex;
 	}
-}*/
+}
 
 @media (max-width: 768px) {
 	.head {
+		position: relative;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		align-items: center;
@@ -77,6 +93,8 @@ nav {
 		order: 0;
 		align-self: center;
 		line-height: 1;
+		position: relative;
+		z-index: 1000;
 	}
 
 	/* The list becomes a dropdown below the header, so it doesn't push the icon */
