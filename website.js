@@ -80,4 +80,3 @@ function setupGroup(buttons) {
 setupGroup(bedButtons);
 setupGroup(bathButtons);
 cleanSelect.addEventListener("change", calculate);
-calculate(); // show a price on page load

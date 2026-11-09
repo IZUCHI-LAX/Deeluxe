@@ -409,8 +409,123 @@ nav {
 }
 
 .form-container {
-	flex: 1 1 320px;
-	/* was 1 1 0 */
+	box-sizing: border-box;
+	container-type: inline-size;
+	/* lets children size their text to this box */
+	width: 100%;
+	max-width: 460px;
+	margin: 0 auto;
+	min-width: 0;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: clamp(8px, 2vw, 14px);
+	padding: clamp(14px, 4vw, 40px);
+	border-radius: clamp(10px, 2.5vw, 20px);
+	background-color: rgb(132, 199, 168);
+	box-shadow: 5px 10px 18px rgb(121, 224, 176);
+	overflow: hidden;
+}
+
+/* Every direct child can shrink to the container's width */
+.form-container>* {
+	min-width: 0;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+/* Heading scales with the container */
+.form-container .price {
+	font-size: clamp(1.4rem, 7cqi, 2.4rem);
+	line-height: 1.15;
+	overflow-wrap: anywhere;
+}
+
+/* Section labels */
+.form-container .bed,
+.form-container .bath,
+.form-container .head-label {
+	font-size: clamp(1rem, 4.5cqi, 1.5rem);
+	display: inline-block;
+	color: teal;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+/* Bedroom and bathroom rows: one line, equal-width buttons */
+.bedcolumn,
+.bathcolumn {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	gap: clamp(4px, 1.5cqi, 10px);
+	width: 100%;
+}
+
+.bedcolumn button,
+.bathcolumn button {
+	flex: 1 1 0;
+	min-width: 0;
+	box-sizing: border-box;
+	padding: 0.5em 0;
+	font-size: clamp(0.6rem, 4cqi, 1.1rem);
+	line-height: 1.2;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
+	border-radius: clamp(6px, 1.5cqi, 12px);
+	cursor: pointer;
+}
+
+/* Dropdown spans the full width */
+.form-container select {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	font-size: clamp(0.9rem, 4cqi, 1.05rem);
+	padding: 0.6em 0.8em;
+}
+
+/* Price and note text */
+.form-container .total {
+	font-size: clamp(1.05rem, 4.5cqi, 1.4rem);
+	font-weight: 700;
+	overflow-wrap: anywhere;
+}
+
+.form-container p {
+	font-size: clamp(0.85rem, 3.5cqi, 1rem);
+	overflow-wrap: anywhere;
+}
+
+/*.form-container {
+	box-sizing: border-box;
+	min-width: 0;
+	max-width: 460px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+
+	/* one column that can shrink, instead of auto *
+	gap: 12px;
+	padding: clamp(0.6rem, 2.5vw, 2.5rem);
+	border-radius: clamp(10px, 2vw, 20px);
+	background-color: rgb(132, 199, 168);
+	box-shadow: 5px 10px 18px rgb(121, 224, 176);
+	overflow: hidden;
+	container-type: inline-size;*/
+
+/* Every direct child is allowed to shrink to the container's width *
+	.form-container>* {
+		min-width: 0;
+		max-width: 100%;
+		box-sizing: border-box;
+
+	}*/
+
+
+/*flex: 1 1 320px;
+	
 	min-width: 0;
 	max-width: 460px;
 	width: 100%;
@@ -418,12 +533,12 @@ nav {
 	padding: clamp(0.6rem, 2.5vw, 2.5rem);
 	border-radius: clamp(10px, 2vw, 20px);
 	background-color: rgb(132, 199, 168);
-	box-shadow: 5px 10px 18px rgb(121, 224, 176);
+	box-shadow: 5px 10px 18px rgb(121, 224, 176);*/
 
 
 
 
-	/*flex: 1 1 0;
+/*flex: 1 1 0;
 	min-width: 0;
 	max-width: 460px;
 	width: auto;
@@ -431,9 +546,10 @@ nav {
 	padding: clamp(0.6rem, 2.5vw, 2.5rem);
 	border-radius: clamp(10px, 2vw, 20px);
 	background-color: rgb(132, 199, 168);
-	box-shadow: 5px 10px 18px rgb(121, 224, 176);*/
+	box-shadow: 5px 10px 18px rgb(121, 224, 176);
 
 }
+*/
 
 .hero {
 	display: flex;
@@ -447,12 +563,15 @@ nav {
 
 .price {
 	color: teal;
-	font-family: "Mouse Memoirs", sans-serif;
+	font-family: "Poppins", sans-serif;
 	/* replace with your chosen font */
 	font-weight: bold;
-	font-size: 45px;
+	font-size: clamp(13px, 3vw, 30px);
 	margin: 0;
 	padding-top: 0;
+	white-space: nowrap;
+
+
 	/*color: teal;
 	font-family: "Mouse Memoirs", sans-serif;
 	font-weight: bold;
@@ -461,28 +580,37 @@ nav {
 	margin-top: 0px;*/
 }
 
-.bed {
+/*.bed {
 	color: teal;
 	font-family: monospace;
 	font-weight: bold;
 	font-size: 25px;
 
+}*/
+
+/*.bedcolumn,
+.bathcolumn {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
 }
 
-.bedcolumn {
-	align-items: center;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	gap: 10px;
-
-	/*align-items: center;
+align-items: center;
 	display: flex;
 	justify-content: space-between;
-	gap: 5px;*/
+	gap: 5px;
+
+
+.bedcolumn button {
+	flex: 1 1 0;
+	/* share the row width equally
+min-width: 0;
+/* allow buttons to shrink below their text width 
 }
 
-/*.studio {
+.studio {
 	color: white;
 	background-color: rgb(19, 66, 62);
 	font-weight: bold;
@@ -505,18 +633,36 @@ nav {
 .a,
 .b,
 .c,
-.d,
+.d {
+	color: white;
+	background-color: rgb(19, 66, 62);
+	font-weight: bold;
+	padding: 15px 20px;
+	border: 1px solid rgb(83, 117, 114);
+	border-radius: 20px;
+	margin-right: 10px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
 .aa,
 .bb,
 .cc {
 	color: white;
 	background-color: rgb(19, 66, 62);
 	font-weight: bold;
-	padding: 15px 20px;
-	border: 3px solid rgb(83, 117, 114);
-	border-radius: 10px;
+	padding: 15px 40px;
+	border: 1px solid rgb(83, 117, 114);
+	border-radius: 20px;
 	margin-right: 10px;
+	gap: 10px;
+	width: 100%;
+
 }
+
+
+
 
 /*.a,
 .b,
@@ -561,7 +707,7 @@ nav {
 
 .bathrooms {
 	color: teal;
-	font-family: monospace;
+	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 25px;
 	margin: 10px 0;
@@ -574,7 +720,7 @@ nav {
 
 .bath {
 	color: teal;
-	font-family: monospace;
+	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 25px;
 	margin-top: 10px;
