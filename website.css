@@ -60,7 +60,7 @@ nav {
 
 @media (max-width: 768px) {
 	.head {
-		position: relative;
+		position: sticky;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		align-items: center;
