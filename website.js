@@ -4,6 +4,8 @@ console.log("script loaded");
 document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.getElementById("mobile-menu");
   const navContainer = document.getElementById("nav-container");
+  const closeBtn = document.getElementById("close-btn");
+  const overlay = document.getElementById("overlay");
 
   if (!menuBtn || !navContainer) {
     console.log("Menu elements not found. Check the IDs.");
@@ -12,24 +14,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function setMenuOpen(isOpen) {
     navContainer.classList.toggle("active", isOpen);
-    menuBtn.innerHTML = isOpen ? "&times;" : "&#9776;";
+    if (overlay) overlay.classList.toggle("active", isOpen);
     menuBtn.setAttribute("aria-expanded", isOpen);
   }
 
-  // Toggle the menu when the hamburger is clicked
+  // Open the right-side panel from the hamburger
   menuBtn.addEventListener("click", function (e) {
     e.preventDefault(); // stop href="#" from jumping to the top
-    setMenuOpen(!navContainer.classList.contains("active"));
+    setMenuOpen(true);
   });
 
-  // Close after any nav button is tapped
+  // Close with the × button inside the panel
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => setMenuOpen(false));
+  }
+
+  // Close when the dimmed background is tapped
+  if (overlay) {
+    overlay.addEventListener("click", () => setMenuOpen(false));
+  }
+
+  // Close after a nav button is tapped
   navContainer.addEventListener("click", function (e) {
-    if (e.target.closest("button")) setMenuOpen(false);
+    if (e.target.closest("button:not(.close-btn)")) setMenuOpen(false);
   });
 
-  // Close when tapping outside the header
-  document.addEventListener("click", function (e) {
-    if (!e.target.closest("header")) setMenuOpen(false);
+  // Close with the Escape key
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") setMenuOpen(false);
   });
 
   // Close when the user scrolls more than 30px
