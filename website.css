@@ -675,27 +675,6 @@ min-width: 0;
 }
 
 
-
-
-/*.a,
-.b,
-.c,
-.d {
-	color: white;
-	background-color: rgb(19, 66, 62);
-	font-weight: bold;
-	padding: center;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-right: 20px;
-	padding-left: 20px;
-	border-style: solid;
-	border: 10px rgb(83, 117, 114);
-	border-radius: 10px;
-	margin-right: 10px;
-
-}*/
-
 .a:active {
 	color: rgb(19, 66, 62);
 	background-color: white;
@@ -873,13 +852,14 @@ min-width: 0;
 
 .title5 {
 	margin: 0 0 0.5rem;
-	font-family: "Mouse Memoirs", sans-serif;
-	font-size: clamp(1.8rem, 6vw, 3.5rem);
+	font-family: "Poppins", sans-serif;
+	font-size: clamp(1.6rem, 4vw, 2.4rem);
+	color: rgb(19, 66, 62);
 	font-weight: bold;
 	line-height: 1.2;
 	text-transform: uppercase;
-	color: teal;
 	overflow-wrap: break-word;
+	text-align: center;
 
 	/*font-family: "Mouse Memoirs", sans-serif;
 	font-size: 55px;
@@ -898,6 +878,7 @@ min-width: 0;
 	margin: 0;
 	overflow-wrap: break-word;
 	width: auto;
+	text-align: center;
 }
 
 .forth-container {
@@ -1043,16 +1024,14 @@ min-width: 0;
 	grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 200px));
 	align-items: stretch;
 	justify-content: center;
-	padding: 2rem 1rem;
 	gap: 1rem;
 	vertical-align: top;
-	margin: 1100;
 	margin: 0 auto;
 	overflow-wrap: break-word;
 	width: auto;
 	line-height: 1.5;
 	width: 100%;
-	padding: clamp(1.5rem, 5vw, 4rem) clamp(1rem, 4vw, 3rem);
+
 
 }
 
