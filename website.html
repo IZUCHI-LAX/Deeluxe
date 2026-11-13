@@ -94,40 +94,79 @@
             <div class="bedroom">
                 <label class="bed">Bedrooms</label>
             </div>
+
             <div class="bedcolumn" id="bedrooms">
-                <button type="button" aria-pressed="true" class="studio" data-value="0">Studio</button>
-                <button type="button" aria-pressed="false" class="a" data-value="1">1</button>
-                <button type="button" aria-pressed="false" class="b" data-value="2">2</button>
-                <button type="button" aria-pressed="false" class="c" data-value="3">3</button>
-                <button type="button" aria-pressed="false" class="d" data-value="4">4+</button>
+                <button type="button" aria-pressed="true" class="choice studio" data-value="0">Studio</button>
+                <button type="button" aria-pressed="false" class="choice a" data-value="1">1</button>
+                <button type="button" aria-pressed="false" class="choice b" data-value="2">2</button>
+                <button type="button" aria-pressed="false" class="choice c" data-value="3">3</button>
+
+
+                <div class="more-wrap">
+                    <button type="button" aria-pressed="false" aria-expanded="false" aria-haspopup="true"
+                        class="choice more-trigger d" data-value="4">4+</button>
+                    <div class="more-menu" hidden>
+                        <button type="button" class="option" data-value="4">4</button>
+                        <button type="button" class="option" data-value="5">5</button>
+                        <button type="button" class="option" data-value="6">6</button>
+                        <button type="button" class="option" data-value="7">7</button>
+                        <button type="button" class="option" data-value="8">8</button>
+                        <button type="button" class="option" data-value="9">9</button>
+                        <button type="button" class="option" data-value="10">10</button>
+                    </div>
+                </div>
+
             </div>
 
             <div class="Bathrooms">
                 <label class="bath">Bathrooms</label>
             </div>
             <div class="bathcolumn" id="bathrooms">
-                <button type="button" aria-pressed="true" class="aa" data-value="1">1</button>
-                <button type="button" aria-pressed="false" class="bb" data-value="2">2</button>
-                <button type="button" aria-pressed="false" class="cc" data-value="3">3+</button>
+                <button type="button" aria-pressed="false" class="choice aa" data-value="1">1</button>
+                <button type="button" aria-pressed="false" class="choice bb" data-value="2">2</button>
+
+
+                <div class="more-wrap">
+                    <button type="button" aria-pressed="false" aria-expanded="false" aria-haspopup="true"
+                        class="choice more-trigger cc" data-value="3">3+</button>
+                    <div class="more-menu" hidden>
+                        <button type="button" class="option" data-value="3">3</button>
+                        <button type="button" class="option" data-value="4">4</button>
+                        <button type="button" class="option" data-value="5">5</button>
+                        <button type="button" class="option" data-value="6">6</button>
+                        <button type="button" class="option" data-value="7">7</button>
+                        <button type="button" class="option" data-value="8">8</button>
+                        <button type="button" class="option" data-value="9">9</button>
+                        <button type="button" class="option" data-value="10">10</button>
+                    </div>
+                </div>
+
             </div>
 
             <div>
-                <label for="clean" class="head-label">Offers</label><br>
+                <label for="clean" class="head-label">Offers</label>
+                <p class="hint">Select one or more</p>
 
-                <select id="clean" class="cleann">
-                    <option value="standard">Basic Cleaning</option>
-                    <option value="deep">Deep Cleaning</option>
-                    <option value="office">Office Cleaning</option>
-                    <option value="construction">Post-Construction cleaning</option>
-                    <option value="pest">Pest Control (fumigating)</option>
-                </select>
+                <div id="services" class="servicecolumn">
+                    <button type="button" class="choice" data-service="standard">Basic Cleaning</button>
+                    <button type="button" class="choice" data-service="deep">Deep Cleaning</button>
+                    <button type="button" class="choice" data-service="office">Office Cleaning</button>
+                    <button type="button" class="choice" data-service="construction">Post-Construction cleaning</button>
+                    <button type="button" class="choice" data-service="pest">Pest Control (fumigating)</button>
+                </div>
             </div>
+
+
+
             <div>
                 <p id="totalPrice" class="total">Total: ₦0</p>
-                <P>Feel free to negotiate <a href="https://wa.me/+2349037940259" target="blank">
-                        Click here
-                    </a>
-                </P>
+
+                <a href="https://wa.me/+2349037940259" id="bookBtn" class="cta-button" aria-disabled="true">
+                    Book now
+                </a>
+                <p class="cta-hint" id="ctaHint">Feel free to negotiate</p>
+
+
 
             </div>
 
@@ -213,7 +252,7 @@
                 thorough
                 cleaning.
             </p>
-            <p class="title7">We’re a family-run cleaning company with one goal: to give you your time back. You
+            <p class="title7">We’re a family-run cleaning company with one goal which is to give you your time back. You
                 shouldn’t
                 have to spend
                 your evenings scrubbing floors or worrying about who’s in your home.
