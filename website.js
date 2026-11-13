@@ -113,7 +113,7 @@ function updateBookButton(bed, bath, services, total, hasSize) {
   }
 
   const lines = [
-    "Hello, I'd like to book a cleaning.",
+    "Hello Deeluxe CleanPro, I'd like to book a service.",
     "",
     "Bedrooms: " + (bed ? bed.textContent.trim() : "Not selected"),
     "Bathrooms: " + (bath ? bath.textContent.trim() : "Not selected"),
