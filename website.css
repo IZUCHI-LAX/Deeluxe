@@ -1141,41 +1141,6 @@ nav {
 	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
 
-.review-form[hidden] {
-	display: none;
-}
-
-.review-form h3 {
-	color: rgb(19, 66, 62);
-	margin: 0 0 4px;
-}
-
-.review-form label {
-	font-weight: 600;
-	color: rgb(19, 66, 62);
-	font-size: 0.95rem;
-}
-
-.review-form input[type="text"],
-.review-form textarea {
-	width: 100%;
-	padding: 10px 12px;
-	font: inherit;
-	border: 1px solid rgb(83, 117, 114);
-	border-radius: 10px;
-}
-
-.review-form textarea {
-	resize: vertical;
-	min-height: 100px;
-}
-
-.review-form input:focus,
-.review-form textarea:focus {
-	outline: 2px solid #0a7cff;
-	outline-offset: 1px;
-}
-
 .stars-field {
 	border: none;
 	padding: 0;

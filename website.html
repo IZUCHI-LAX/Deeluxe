@@ -310,42 +310,14 @@
         <h2 class="testimonials-title">What our clients say</h2>
 
         <div class="review-actions">
-            <button type="button" class="review-open" id="reviewOpen" aria-expanded="false" aria-controls="reviewForm">
-                Write a review
-            </button>
+            <a href="https://g.page/r/CUbTM-TfUQOzEBM/review" target="_blank" rel="noopener noreferrer">
+                <button type="button" class="review-open" id="reviewOpen" aria-expanded="false"
+                    aria-controls="reviewForm">
+                    Leave a review
+                </button>
+            </a>
         </div>
 
-        <form class="review-form" id="reviewForm" hidden novalidate>
-            <h3>Share your experience</h3>
-
-            <label for="reviewName">Your name</label>
-            <input type="text" id="reviewName" maxlength="60" required>
-
-            <label for="reviewArea">Area (optional)</label>
-            <input type="text" id="reviewArea" maxlength="60" placeholder="e.g. Rumuola, Port Harcourt">
-
-            <fieldset class="stars-field">
-                <legend>Your rating</legend>
-                <div class="stars-input" id="starsInput">
-                    <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars">★</label>
-                    <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">★</label>
-                    <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">★</label>
-                    <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">★</label>
-                    <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">★</label>
-                </div>
-            </fieldset>
-
-            <label for="reviewText">Your review</label>
-            <textarea id="reviewText" rows="4" maxlength="500" required></textarea>
-            <p class="review-count"><span id="charCount">0</span>/500</p>
-
-            <p class="review-error" id="reviewError" role="alert" hidden></p>
-
-            <div class="review-form-buttons">
-                <button type="button" class="review-cancel" id="reviewCancel">Cancel</button>
-                <button type="submit" class="review-submit">Submit review</button>
-            </div>
-        </form>
 
         <div class="testimonials-grid" id="testimonialsGrid">
             <article class="testimonial-card">
